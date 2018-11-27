@@ -4,6 +4,12 @@ import java.nio.ByteBuffer;
 
 import com.lmax.disruptor.RingBuffer;
 
+
+/**
+ * 使用ringbuffer提交
+ * @author BenX
+ *
+ */
 public class OrderEventProducer {
 
 	private RingBuffer<OrderEvent> ringBuffer;

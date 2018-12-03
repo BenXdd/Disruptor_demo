@@ -11,6 +11,7 @@ public class Handler3 implements EventHandler<Trade>{
 								+ ", ID: "
 								+ event.getId()
 								+ " INSTANCE :" + event.toString());
+		
 	}
 	
 	

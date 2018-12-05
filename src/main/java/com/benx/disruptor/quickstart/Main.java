@@ -45,7 +45,7 @@ public class Main {
 		//创建生产者
 		OrderEventProducer producer = new OrderEventProducer(ringBuffer);
 		
-		ByteBuffer bb = ByteBuffer.allocate(8); //nio
+		ByteBuffer bb = ByteBuffer.allocate(8); //nio   用的不是new
 		//投递
 		for(long i = 0 ;i<= 100 ; i++ ) {
 			bb.putLong(0, i);
